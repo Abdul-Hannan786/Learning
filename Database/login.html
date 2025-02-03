@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/js/all.min.js"
+      integrity="sha512-b+nQTCdtTBIRIbraqNEwsjB6UvL3UEMkXnhzd8awtCYh0Kcsjl9uEgwVFVbhoj3uu1DO1ZMacNvLoyJJiNfcvg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <title>Login</title>
+  </head>
+  <body>
+    <div class="flex min-h-screen justify-center items-center flex-col gap-5">
+      <div
+        class="p-8 shadow-2xl rounded-xl flex flex-col justify-center items-center gap-5"
+      >
+        <h1 class="text-3xl font-bold">Login</h1>
+        <form id="form" class="flex flex-col gap-5">
+          <input
+            type="email"
+            placeholder="enter your email"
+            id="email"
+            class="border border-gray-100 outline-none px-3 py-2 rounded w-64 sm:w-80"
+          />
+          <input
+            type="password"
+            placeholder="enter your password"
+            id="password"
+            class="border border-gray-100 outline-none px-3 py-2 rounded w-64 sm:w-80"
+          />
+          <button
+            type="submit"
+            class="w-full bg-blue-500 px-4 py-2 rounded text-white font-semibold mt-2"
+          >
+            Login
+          </button>
+        </form>
+        <button
+          id="googlebtn"
+          class="w-full border border-gray-500 text-black px-4 py-2 rounded font-semibold"
+        >
+          <i class="fa-brands fa-google mr-1"></i>
+          Sign in with Google
+        </button>
+        <p class="text-center">
+          Don't have an account?
+          <a href="./register.html" class="text-blue-500">Sign up</a>
+        </p>
+      </div>
+    </div>
+
+    <script type="module" src="login.js"></script>
+  </body>
+</html>

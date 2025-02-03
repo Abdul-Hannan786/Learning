@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <title>Firebase</title>
+  </head>
+  <body>
+    <div class="flex flex-col items-center justify-center min-h-screen py-8">
+      <button id="logoutbtn" class="absolute hover:bg-red-700 transition-transform duration-300 hover:scale-105 top-5 right-10 bg-red-600 px-4 py-2 rounded text-white font-semibold mb-5">Logout</button>
+      <div
+        class="p-8 shadow-2xl rounded-xl flex flex-col justify-center items-center gap-5"
+      >
+        <h1 class="text-3xl font-bold">Todo</h1>
+        <form id="form" class="flex flex-col gap-5">
+          <input
+            type="text"
+            placeholder="Title"
+            id="title"
+            class="border border-gray-100 outline-none px-3 py-2 rounded w-64 sm:w-80"
+            required
+          />
+          <textarea
+            name=""
+            class="border border-gray-100 outline-none px-3 py-2 rounded w-64 sm:w-80"
+            id="description"
+            placeholder="Enter description"
+            required
+          ></textarea>
+          <button
+            class="w-full bg-blue-500 px-4 py-2 rounded text-white font-semibold mt-2"
+          >
+            Add Todo
+          </button>
+        </form>
+      </div>
+
+      <div class="flex flex-col mt-5 w-xs sm:w-sm md:w-2xl lg:w-4xl gap-5" id="container">
+       
+      </div>
+    </div>
+    <script type="module" src="app.js"></script>
+  </body>
+</html>
