@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <title>Home</title>
+  </head>
+  <body>
+    <nav class="bg-gray-800">
+      <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+        <div class="relative flex h-16 items-center justify-between p-2 sm:p-0">
+          <div class="flex items-center">
+            <h1 class="text-white text-xl font-bold">Blogging App</h1>
+          </div>
+          <div class="hidden sm:block">
+            <div class="flex space-x-4">
+              <a href="#" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Dashboard</a>
+              <a href="#" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Team</a>
+              <a href="#" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Projects</a>
+              <button class="rounded-md px-3 py-2 text-sm bg-red-600 font-semibold text-white hidden" id="logoutBtn">Logout</button>
+            </div>
+          </div>
+          <div class="flex items-center">
+            <button type="button" class="relative flex rounded-full bg-gray-800 text-sm" id="user-menu-button" aria-expanded="false" aria-haspopup="true">
+              <img class="size-12 rounded-full hidden"  alt="avatar" id="profilePic" />
+              <button class="rounded-md px-3 py-2 text-sm bg-blue-600 font-semibold text-white" id="loginBtn"><a href="./login.html ">Login</a></button>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="sm:hidden" id="mobile-menu">
+        <div class="space-y-1 px-2 pt-2 pb-3">
+          <a href="#" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white" aria-current="page">Dashboard</a>
+          <a href="#" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Team</a>
+          <a href="#" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Projects</a>
+          <button class="rounded-md px-3 py-2 w-full text-start text-sm hover:bg-red-600 font-semibold text-white hidden" id="logoutBtn-2">Logout</button>
+        </div>
+      </div>
+    </nav>
+    
+
+    <script type="module" src="./scripts/app.js"></script>
+  </body>
+</html>
